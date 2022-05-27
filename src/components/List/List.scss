@@ -1,10 +1,19 @@
 .list {
   margin-bottom: 30px;
+  &__add-button {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   li {
     display: flex;
     align-items: center;
     cursor: pointer;
     padding: 10px 12px;
+    // margin-bottom: 5px;
 
     &.active {
       background: #ffffff;
@@ -12,35 +21,16 @@
       border-radius: 4px;
     }
 
+    .badge {
+      position: relative;
+      left: 5px;
+    }
+
     i {
       margin-right: 8px;
       display: inline-flex;
       img {
         opacity: 0.6;
-      }
-    }
-
-    .badge {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      position: relative;
-      left: 5px;
-
-      &--green {
-        background-color: #42b883;
-      }
-      &--blue {
-        background-color: #64c4ed;
-      }
-      &--pink {
-        background-color: #ffbbcc;
-      }
-      &--green-light {
-        background-color: #b6e6bd;
-      }
-      &--grey {
-        background-color: #c9d1d3;
       }
     }
   }

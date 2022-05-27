@@ -27,3 +27,15 @@
     padding: 60px 20px;
   }
 }
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+
+  &:focus {
+    border-color: #cecdcd;
+  }
+}
